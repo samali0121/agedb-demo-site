@@ -1,0 +1,132 @@
+.hero {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/hero-bg.jpg") center center / cover
+    no-repeat;
+  /* padding-top: 12vh;
+  padding-left: 5vw; */
+  border-radius: 25px;
+  position: relative;
+  margin-bottom: 0;
+  padding: 60px 50px;
+}
+
+.a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: rgb(255, 255, 255) !important;
+
+  text-decoration: none;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(45deg, #6e2dd0, #ffffff, #6e2dd0, #6600ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.para {
+  margin: 5vh 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 180%;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn1:active,
+.btn2:active {
+  transform: scale(0.95);
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.btn1 {
+  border: 1px solid #f5f1f5;
+  border-radius: 35px;
+  padding: 12px 22px;
+  font-size: 20px;
+  background-color: white;
+  font-weight: 500;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.learnMoreBtn {
+  position: relative;
+  color: white !important;
+}
+
+.learnMoreBtn:hover {
+  color: white !important;
+}
+
+.learnMoreText {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+}
+
+.learnMoreText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.learnMoreBtn:hover .learnMoreText::after {
+  transform: scaleX(1);
+}
+
+.arrowIcon {
+  transition: width 0.5s ease-in-out;
+}
+
+.learnMoreBtn:hover .arrowIcon {
+  width: 65px;
+  color: #fff;
+}
+.fontBold {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 425px) {
+  .hero {
+    padding: 30px 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .fontBold {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .fontBold {
+    font-size: 10px;
+  }
+}

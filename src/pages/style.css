@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Wix Madefor Display", sans-serif !important;
+}
+a {
+  text-decoration: none;
+}
+/* ------------------- Buttons css Start -------------- */
+.main-btn a {
+  border-radius: 24px;
+  border: 1px solid #f40f92;
+  color: #f40f92;
+  padding: 15px 26px;
+}
+.filled_btn {
+  border-radius: 24px;
+  background: #f40f92;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 15px 20px;
+  border: none;
+}
+.btn-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* ------------------- Buttons css End -------------- */
+
+/* ------------------- Headings -------------------*/
+.headTag {
+  color: #ff5ed4;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-inner {
+  align-items: center;
+}
+.main-navBar {
+  gap: 20px;
+}
+.nav-link {
+  color: #33126a;
+  font-size: 14px;
+  font-weight: 600;
+}
+a.nav-link:hover {
+  border-radius: 4px;
+  background: #e8dcf8;
+}
+
+@media only screen and (max-width: 425px) {
+  .filled_btn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .filled_btn {
+    padding: 15px 10px;
+    font-size: 10px;
+  }
+}
